@@ -27,13 +27,22 @@ erase完成，迭代器就失效了。
 常用方法介绍:
 size()
 empty()
-reserve(20);   vector预留空间
-resize(20);   容器扩容用的
+reserve(20);   vector预留空间  只给容器底层开辟指定大小的内存空间，并不会新的元素
+resize(20);   容器扩容用的    不仅给容器底层开辟指定大小的内存空间，还会添加新元素
 swap : 两个容器进行元素交换
 
 */
 int main(){
-    vector<int> vec;
+    vector<int> vec;  
+    //  0 1 2 4 8 16 32 64，如果不断扩容会有很大消耗
+
+    // vec.reserve(20); // 此时就能避免频繁的扩容操作
+
+    vec.resize(20);
+    cout<<vec.empty()<<endl;
+    cout<<vec.size()<<endl;
+
+    
     for(int i=0;i<20;++i){
         vec.push_back(rand()%100+1);
     }

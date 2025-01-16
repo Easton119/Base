@@ -11,6 +11,8 @@
         "unordered_map": "cpp",
         "xhash": "cpp",
         "iosfwd": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "set": "cpp",
+        "xtree": "cpp"
     }
 }

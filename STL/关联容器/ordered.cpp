@@ -35,6 +35,11 @@ int main(){
         cout<<*it<<endl;
     }
 
+    map<int,string> map1;
+    map1.insert({1,"lisi"});
+    map1[1]="zhangsan";
+    cout<<map1[1]<<endl;
+
     vector<int> vec;
     vector<int>::const_iterator it2 = vec.begin();
     vector<int>::reverse_iterator rit = vec.rbegin();

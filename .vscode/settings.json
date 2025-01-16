@@ -2,6 +2,13 @@
     "editor.tokenColorCustomizations": {},
     "files.associations": {
         "*.ejs": "html",
-        "vector": "cpp"
+        "vector": "cpp",
+        "iostream": "cpp",
+        "list": "cpp",
+        "ostream": "cpp",
+        "queue": "cpp",
+        "stack": "cpp",
+        "unordered_map": "cpp",
+        "xhash": "cpp"
     }
 }

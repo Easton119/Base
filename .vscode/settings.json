@@ -13,6 +13,7 @@
         "iosfwd": "cpp",
         "xstring": "cpp",
         "set": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "xstddef": "cpp"
     }
 }

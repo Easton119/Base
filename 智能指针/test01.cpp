@@ -1,6 +1,7 @@
 /*
 智能指针：
-unique_ptr
+不带引用计数的：auto_ptr,scoped_ptr,unique_ptr
+带引用计数的：shared_ptr,weak_ptr
 */
 
 #include<iostream>

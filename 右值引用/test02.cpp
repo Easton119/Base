@@ -33,6 +33,18 @@ public:
 		mpstack = new int[src.msize];
 		memcpy(mpstack, src.mpstack, sizeof(int)*mtop);
 	}
+	/*
+	移动构造函数
+	Stack(Stack&& src)
+		:msize(src.size),mtop(src.top)
+	{
+		cout<<"Stack(Stack&& src)"<<endl;
+		mpstack = src.mpstack;
+		src.mpstack = nullptr;
+	}
+	 */
+
+
 	// 栈的赋值重载函数
 	Stack& operator=(const Stack &src)
 	{
@@ -48,6 +60,22 @@ public:
 		memcpy(mpstack, src.mpstack, sizeof(int)*mtop);
 		return *this;
 	}
+/*
+	移动赋值
+	Stack& operator=(Stack&& src)
+	{
+		cout<<"Stack& operator=(Stack&& src)"<<endl;
+		if(this==&src){
+			return *this;
+		}
+		delete []mpstack;
+		mpstack = src.mpstack;
+		msize=src.msize,mtop=src.mtop;
+		src.mpstack=nullptr;
+		return *this;
+	}
+*/
+
 	// 返回栈的长度
 	int getSize()const { return msize; }
 private:
